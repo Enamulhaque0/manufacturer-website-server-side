@@ -38,9 +38,9 @@ const emailSenderOptions = {
     }
 }
 
-// const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.q7roj.mongodb.net/?retryWrites=true&w=majority`;
-const uri = "mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.vh8m10a.mongodb.net/?retryWrites=true&w=majority";
+const uri = "mongodb+srv://enamulhaque:MYrpFxYQExqQLeUY@cluster0.vh8m10a.mongodb.net/?retryWrites=true&w=majority";
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
+
 
 const run = async () => {
 
