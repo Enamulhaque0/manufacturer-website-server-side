@@ -75,7 +75,7 @@ const run = async () => {
             res.send({ clientSecret: paymentIntent.client_secret })
         });
 
-        app.get('/products', async (req, res) => {
+        app.get('/product', async (req, res) => {
             const query = {};
             const products = await productCollenction.find(query).toArray();
             res.send(products)
